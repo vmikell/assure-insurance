@@ -48,6 +48,11 @@ nav li {
   color: palevioletred;
   padding: 0.75rem;
 }
+.btn-one:hover{
+  background:palevioletred;
+  border: 1px solid palevioletred;
+  color: white
+}
 
 .top {
   font-family: "Ubuntu", sans-serif;
@@ -66,6 +71,7 @@ nav li {
   margin-left: 8rem;
   margin-right: 10rem;
   place-items: center;
+  position: relative;
 }
 .card-top h1,
 .card-top p {
@@ -190,27 +196,32 @@ h3 {
 .social-icon:hover {
   opacity: 1;
 }
-.left-links {
-  grid-area: left-links;
-}
-.right-links {
-  grid-area: right-links;
-}
+
 footer {
-  display: grid;
-  grid-template-columns: repeat(
-    5,
-    10rem
-  );
-  grid-template-areas: "left-links right-links . . .";
+  display: flex;
+  justify-content: center;
   padding-top: 1rem;
+  padding-bottom: 10rem;
+  position: relative;
 }
 .footer::after {
   content: "";
   display: flex;
-  height: 100%;
-  width: 1px;
+  position:absolute;
+  height: 50%;
+  width: 5px;
   background: palevioletred;
+}
+.left-links{
+  text-align:left;
+  position: absolute;
+  margin-right:-19px;
+  right:32.5rem
+}
+.right-links{
+  text-align: right;
+  position: absolute;
+  left: 30rem
 }
 .copyright {
   text-align: center;
@@ -244,19 +255,150 @@ footer {
     margin-right: 5rem;
   }
 }
-@media (max-width: 900px) {
-  * {
+@media (max-width: 1280px){
+  .btn-two{
+    display: flex;
+    position: absolute;
+    bottom:-6em;
+    right:-8rem
+  }
+}
+
+/* tablet & medium screens start here */
+
+@media (max-width: 1180px) {
+  .top{
     display: block;
-    margin: 0;
   }
   .family {
     display: none;
   }
+  .card-top h1,
+  .card-top p{
+    position:absolute;
+  }
+  .card-top h1{
+    left:-5rem;
+  }
+  .card-top p{
+    bottom:-10rem;
+    left:-5rem
+  }
+  .btn-two{
+    left:-30rem;
+    bottom:-14rem;
+  }
   .family-small {
     display: block;
+    position: absolute;
+    right:-10rem;
+    top:5rem;
     margin-right: 10rem;
   }
   .card-top::before{
-    margin-bottom: auto;
+    display: none;
+  }
+}
+
+@media (max-width:865px) {
+  .nav-links{
+    position: absolute;
+    right:0rem;
+    top:3rem
+  }
+  .card-top::before{
+    display: none;
+  }
+  .card-top p {
+    font-size: 1.5rem;
+    position: absolute;
+    left:15rem;
+    top:5rem;
+    width:100%
+  }
+  .btn-two{
+    position: absolute;
+    top: 25rem;
+    height: 3rem;
+  }
+  .photo{
+    position: absolute;
+    right: 2rem;
+    top:14rem
+  }
+  
+  .middle-title{
+    padding-top: 20rem;
+  }
+}
+
+
+@media (max-width:750px){
+  .logo{
+    display: block;
+    margin: auto;
+  }
+  .card-top h1{
+    width: 25rem
+  }
+  .card-top p{
+    position: absolute;
+    top:13rem;
+    left:-6rem;
+    width: 23rem
+  }
+  .btn-two{
+    right:-15rem
+  }
+  .family-small{
+    display: block;
+    top:13rem;
+    right:-1;
+    width:50vw
+  }
+  .middle-title{
+    padding-top:15rem;
+  }
+  .social{
+    display:flex
+  }
+  .footer::after{
+    display: none;
+  }
+  .footer{
+    display:block;
+  }
+  .left-links,
+  .right-links{
+    display: block;
+    position: absolute;
+    width:10rem
+  }
+  .left-links{
+    left:0
+  }
+  .right-links{
+    left:10rem;
+    text-align: left;
+
+  }
+  
+}
+@media (max-width: 405px){
+  nav{
+    display:block
+  }
+  .logo{
+    font-size:2rem;
+    display: block;
+    width:100%
+  }
+  .navlinks{
+    display: block;
+    position: absolute;
+  }
+  .top{
+    display:block;
+    margin-top: 10rem;
   }
 }
