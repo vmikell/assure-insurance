@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+.navbar{
+  font-family: 'Ubuntu', sans-serif;
+
+  a:hover{
+    color: $primary !important;
+  }
+
+  .navbar-brand{
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,28 @@
+@use '../custom' as *;
+
+.btn-square,
+.btn-square-nav {
+  border: 1px solid $black;
+  color: $primary;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.btn-square {
+  border: 1px solid $white;
+  color: $white;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.btn-submit{
+  width: 7rem;
+}

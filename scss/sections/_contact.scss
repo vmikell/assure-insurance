@@ -1,0 +1,14 @@
+@use '../custom' as *;
+
+.contact-card{
+  padding: 3rem;
+
+  .checkboxes{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+    span{
+      margin: 25px;
+    }
+  }
+}
