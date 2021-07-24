@@ -10900,7 +10900,7 @@ textarea.form-control-lg {
 .contact {
   font-family: "Ubuntu", sans-serif;
   width: 100%;
-  background: linear-gradient(to bottom right, rgba(219, 126, 157, 0.95), rgba(255, 255, 255, 0.95));
+  background: linear-gradient(to top right, rgba(219, 126, 157, 0.95), rgba(221, 167, 184, 0.6));
 }
 .contact hr {
   width: 10rem;
