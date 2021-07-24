@@ -1,0 +1,42 @@
+@use '../custom' as *;
+
+.btn-square,
+.btn-square-nav {
+  border: 1px solid $black;
+  color: $primary;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.btn-square {
+  border: 1px solid $white;
+  color: $white;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.btn-submit{
+  width: 7rem;
+  border-radius: 0;
+}
+
+.btn-modal{
+  color: $primary;
+  border: none;
+  background-color: $white;
+  width: 100%;
+  text-align: center;
+
+  i{
+    padding-right: .25rem;
+  }
+}
+

@@ -1,0 +1,30 @@
+@use '../custom' as *;
+
+.contact {
+  font-family: $primaryFont;
+  width: 100%;
+
+  hr{
+    width:10rem;
+  }
+}
+
+.contact-card {
+  max-width: 45rem;
+}
+
+.checkboxes {
+  font-size: .85rem;
+  text-transform: capitalize;
+  display: block;
+
+  @include media-breakpoint-up(sm){
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    margin: 25px;
+  }
+}

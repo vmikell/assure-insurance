@@ -1,0 +1,21 @@
+@use '../custom' as *;
+
+.intro-section {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: $primary;
+  min-height: 500px;
+  max-height: 100%;
+  width: 100%;
+
+  h1 {
+    color: $white;
+  }
+
+  p{
+    color: $white;
+  }
+  
+  .container{
+    width: 100%;
+  }
+}

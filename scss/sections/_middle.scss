@@ -1,0 +1,17 @@
+@use '../custom' as *;
+
+.middle-card {
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 2rem;
+  max-width: 28rem;
+
+  .icon{
+    font-size: 4rem;
+    background-color: $primary;
+    border-radius: 50%;
+    padding-top: 20px;
+    height: 7rem;
+    width: 7rem;    
+  }
+
+}

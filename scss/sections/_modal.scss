@@ -1,0 +1,34 @@
+@use '../custom' as *;
+
+.modal-card {
+  font-family: $primaryFont;
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    button {
+      background-color: $white;
+      border: none;
+
+      &:hover {
+        opacity: 0.5;
+        color: rgba($color: #000000, $alpha: 0.85);
+      }
+
+      i {
+        color: $primary;
+        padding-right: 0.65rem;
+      }
+
+      span {
+        color: $primary;
+      }
+
+      p {
+        padding: 0.75rem;
+        color: $black;
+      }
+    }
+  }
+}
