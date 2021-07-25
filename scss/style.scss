@@ -1,11 +1,13 @@
-@use'custom';
+@use 'custom';
 
 @use 'components/buttons';
-@use 'components/typography';
+@use 'components/mixins';
 
 @use 'sections/navbar';
 @use 'sections/intro';
 @use 'sections/middle';
+@use 'sections/details';
+@use 'sections/callNow';
 @use 'sections/contact';
 @use 'sections/footer';
 @use 'sections/modal';

@@ -1,0 +1,31 @@
+@use '../custom' as *;
+
+.details {
+  background-image: url('../../assets/images/blurry-gradient-haikei.png');
+  background-size: cover;
+}
+
+.detail-rows {
+  display: block;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+
+  img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+
+    @include media-breakpoint-up(sm) {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+}
+.detail-rows-text {
+  display: block;
+  margin: auto;
+  padding-top: 5rem;
+}

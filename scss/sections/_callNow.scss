@@ -1,0 +1,43 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.call-now{
+  overflow: hidden;
+  position: relative;
+
+
+  img{
+    position: relative;
+    border-radius: 15px;
+    width: 20rem;
+    
+  }  
+}
+
+.call-now-img-container{
+  position: relative;
+  width: 22rem;
+  height: 32rem;
+
+  span{
+    background-color: rgba(219, 126, 157, .3);
+    position:absolute;
+    width:20rem;
+    height:30rem;
+    border-radius: 15px;
+    top:1rem;
+    right:2rem;
+    z-index: 1;
+  }
+
+  .span-2{
+    @include gradient-br;
+    position:absolute;
+    width:30rem;
+    height:20rem;
+    border-radius: 15px;
+    top:4rem;
+    right:-2rem;
+    z-index: -1;
+  }
+}

@@ -3,17 +3,6 @@
 footer {
   font-family: $primaryFont;
 
-  .social {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    i {
-      padding: 1rem;
-      font-size: 2rem;
-    }
-  }
-
   span {
     display: flex;
     justify-content: center;
@@ -40,12 +29,26 @@ footer {
       }
     }
   }
+}
 
-  .copyright{
-    font-size: .85rem;
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-    @include media-breakpoint-up(sm){
-      font-size: 1rem;
+  a {
+    text-decoration: none;
+    i {
+      padding: 1rem;
+      font-size: 2rem;
     }
+  }
+}
+
+.copyright {
+  font-size: 0.85rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1rem;
   }
 }

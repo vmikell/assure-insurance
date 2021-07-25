@@ -1,17 +1,18 @@
 @use '../custom' as *;
+@use '../components/mixins' as *;
 
 .middle-card {
   font-family: 'Ubuntu', sans-serif;
   padding-bottom: 2rem;
   max-width: 28rem;
 
-  .icon{
+  .icon {
+    @include gradient-br;
     font-size: 4rem;
-    background-color: $primary;
     border-radius: 50%;
     padding-top: 20px;
     height: 7rem;
-    width: 7rem;    
+    width: 7rem;
+    box-shadow: 1px 10px 15px $secondary;
   }
-
 }

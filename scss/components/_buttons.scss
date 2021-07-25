@@ -1,10 +1,12 @@
 @use '../custom' as *;
+@use './mixins' as *;
 
 .btn-square,
 .btn-square-nav {
   border: 1px solid $black;
   color: $primary;
   padding: 0.5rem 1rem;
+  background-color: $white;
 
   &:hover {
     background-color: $primary;
@@ -37,6 +39,21 @@
 
   i{
     padding-right: .25rem;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+
+  i {
+    color: $white;
+    font-size: 1rem;
+    @include absoluteCenter;
   }
 }
 
